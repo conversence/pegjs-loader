@@ -1,6 +1,6 @@
 {
     "name": "pegjs-loader",
-    "version": "0.5.8",
+    "version": "0.5.9",
     "description": "PEG.js loader for webpack",
     "authors": [
         "Andrey Subbotin <andrey@subbotin.me> (https://github.com/eploko)",
@@ -55,6 +55,7 @@
         "preversion": "npm run clean && npm run check",
         "version": "npm run build",
         "postversion": "git push && git push --tags && npm run clean",
+        "prepare": "npm run clean && npm run build",
         "prepublish": "npm run clean && npm run build"
     }
 }
